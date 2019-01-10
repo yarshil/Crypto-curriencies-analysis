@@ -1,6 +1,5 @@
 ## This script predicts and analyzes different cryptocurrencies on different parameters and
-install.packages("xlsx")
-library(xlsx)
+
 crypto14<-read.csv(file.choose())
 
 crypto14$name <- factor(crypto14$name, levels = c("Bitcoin","Litecoin","Ripple","Ethereum","Bitcoin Cash"), 
